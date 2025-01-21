@@ -121,7 +121,7 @@ def simulate_games():
     total_memory_used = 0
 
     for difficulty in difficulties:
-        for _ in range(33333):  
+        for _ in range(1000000):  
             agent = IDSAgent(difficulty)
             time_taken, score, memory_used = agent.play_game()
             result = 1 if agent.game.is_game_won else 0
